@@ -1,0 +1,13 @@
+Module Cổng thanh toán ACB cho phép bạn tích hợp các giải pháp thanh toán với nền tảng WHMCS.
+Tích hợp cổng thanh toán ACB với WHMCS.
+
+Features
+Tự động nhập cú pháp và số tiền khi quét mã thanh toán
+
+Lợi ích của plugin này là bạn không cần phải đăng ký tư cách doanh nghiệp với momo mà hoàn toàn sử dụng tài khoản cá nhân !
+
+Xử lý giao dịch tự động mà ko cần phải xác nhận thanh toán bằng tay (*)
+
+Cú pháp tuỳ chỉnh linh hoạt
+
+Tương thích với phiên bản mới nhất của WHMCS
