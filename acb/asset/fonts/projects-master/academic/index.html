@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://getbootstrap.com/docs/3.3/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/3.3/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://getbootstrap.com/docs/3.3/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body {
+	font-family: 'Lora', serif;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 760px; /* or 950px */
+}
+
+h1 {
+	font-weight:700
+}
+p {
+	line-height: 1.5em;
+	letter-spacing: -.003em;
+	--x-height-multiplier: 0.35;
+    --baseline-multiplier: 0.179;
+    word-wrap: break-word;
+    font-size: 1.3em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ figure {
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ }
+
+ div .row {
+ 	margin-top: 10px;
+ }
+</style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="new.html#">Zackary Scholl, Ph.D.</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="new.html#about">About</a></li>
+            <li><a href="new.html#publications">Publications</a></li>
+            <li><a href="new.html#cv">CV</a></li>
+            <li><a href="new.html#teaching">Teaching</a></li>
+            <li><a href="new.html#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+
+<div class="row" id="about">
+<div class="col-xs-12">
+    <h1>About</h1>
+    </div>
+<div class="col-sm-6">
+      <figure class="figure  center-block">
+  <img src="https://zackaryscholl.com/assets/images/zack_poster.jpg" class="figure-img img-fluid rounded center-block" alt="A generic square placeholder image with rounded corners in a figure." width="100%">
+  <figcaption class="figure-caption center-block">My poster that won the 2014 Biophysical Society Research Achievement Award</figcaption>
+</figure>
+</div>
+<div class="col-sm-6">
+      <p>I am a native Oregonian, born in Portland. I am interested in studying the protein mediated biochemical processes using nanotechnology. I am also interested in improving tools to manipulate single molecules, including force spectroscopy and molecular dynamic simulations.</p>
+      
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<h2>Research interests:</h2>
+<p>
+<em>Protein folding, single molecule techniques, structural biology, molecular dynamics</em>
+</p>
+</div>
+<div class="col-sm-6">
+     <h2>Education:</h2>
+<p>B.S. in Physics (University of Washington)</p>
+<p>B.S. in Applied Computational Math Science (University of Washington)</p>
+<p>Ph.D. in Computational Biology and Bioinformatics (Duke University)</p>
+
+</div>
+</div>
+
+
+<div class="row" id="cv">
+<div class="col-sm-12">
+<h1>CV</h1>
+<p>
+My latest CV can be found here.
+</p>
+</div>
+</div>
+
+<div class="row" id="publications">
+<div class="col-sm-12">
+<h1>Selected publications</h1>
+<p>Li, Q.*, <strong>Scholl, Z. N.*</strong>, &amp; Marszalek, P. E. <em>(In preparation)</em>. Unraveling the unfolding pathways of yeast phosphoglycerate kinase. <em>Biophysical Journal</em>.</p>
+<p><strong>Scholl, Z. N.</strong>, Yang, W. &amp; Marszalek, P. E. <em>(In preparation)</em>. Reconstructing the folding pathway of a large, multidomain protein, Luciferase. <em>Biophysical Journal</em>.</p>
+<p><strong>Scholl, Z. N.</strong>, Li, Q., Yang, W. &amp; Marszalek, P. E. (2016). Single-molecule force-spectroscopy reveals the calcium dependency of folding intermediates in the multidomain Protein S. <em>Journal of Biological Chemistry</em>.</p>
+<p>Josephs, E.A., <strong>Scholl, Z. N.</strong>, &amp; Marszalek, P. E. (2016). AFM Force Spectroscopy. <em>Introduction to Single Molecule Biophysics Book</em>.</p>
+<p><strong>Scholl, Z. N.*</strong>, Josephs, Eric.*, &amp; Marszalek, P. E. (2016). A Modular, Non-Degenerate Polyprotein Scaffold for Atomic Force Spectroscopy. <em>Biomacromolecules</em>.</p>
+<p><strong>Scholl, Z. N.*</strong>, Zhong, J.*, Hartemink, A. J. (2015). Chromatin interactions correlate with local transcriptional activity in Saccharomyces cerevisiae. <em>bioRxiv</em>.</p>
+<p><strong>Scholl, Z. N.</strong>, Yang, W., &amp; Marszalek, P. E. (2015). Direct Observation of Multimer Stabilization in the Mechanical Unfolding Pathway of a Protein Undergoing Oligomerization. <em>ACS Nano</em>.</p>
+<p>Li, Q., <strong>Scholl, Z. N.</strong>, &amp; Marszalek, P. E. (2014). Capturing the Mechanical Unfolding Pathway of a Large Protein with Coiled-Coil Probes. <em>Angewandte Chemie International Edition</em>.</p>
+<p><strong>Scholl, Z. N.</strong>, Yang, W., &amp; Marszalek, P. E. (2014). Chaperones Rescue Luciferase Folding by Separating its Domains. <em>Journal of Biological Chemistry</em>, M114.582049.</p>
+<p><strong>Scholl, Z. N.</strong>, &amp; Marszalek, P. E. (2014). Unraveling the Mysteries of Chaperone Interactions of the Myosin Head. <em>Biophysical journal, 107</em>(3), 541-542. (Commentary)</p>
+<p>Li, Q., <strong>Scholl, Z. N.</strong>, &amp; Marszalek, P. E. (2014). Nanomechanics of Single Biomacromolecules. In <em>Handbook of Nanomaterials Properties</em> (pp. 1077-1123). Springer Berlin Heidelberg.</p>
+<p><strong>Scholl, Z. N.</strong>, &amp; Marszalek, P. E. (2014). Improving single molecule force spectroscopy through automated real-time data collection and quantification of experimental conditions. <em>Ultramicroscopy, 136</em>, 7-14.</p>
+<p><strong>Scholl, Z. N.</strong>, Li, Q., &amp; Marszalek, P. E. (2014). Single molecule mechanical manipulation for studying biological properties of proteins, DNA, and sugars. <em>Wiley Interdisciplinary Reviews: Nanomedicine and Nanobiotechnology, 6</em>(3), 211-229.</p>
+<p><strong>Scholl, Z. N.*</strong>, Rabbi, M.*, Lee, D., Manson, L., Hanna, S., &amp; Marszalek, P. E. (2013). Origin of Overstretching Transitions in Single-Stranded Nucleic Acids. <em>Physical review letters, 111</em>(18), 188302.</p>
+<p>Loksztejn, A., <strong>Scholl, Z. N.</strong>, &amp; Marszalek, P. E. (2012). Atomic force microscopy captures folded ribosome bound nascent chains. <em>Chem. Commun., 48</em>(96), 11727-11729.</p>
+<p>Magwene, P. M., Kayikci, O., Granek, J. A., Reininga, J. M., <strong>Scholl, Z. N.</strong>, &amp; Murray, D. (2011). Outcrossing, mitotic recombination, and life-history trade-offs shape genome evolution in Saccharomyces cerevisiae. <em>Proceedings of the National Academy of Sciences, 108</em>(5), 1987-1992.</p>
+</div>
+
+</div>
+
+
+
+
+<div class="row" id="teaching">
+<div class="col-xs-12">
+<h1>Teaching statement</h1>
+ <p>Being a student for 20 years has taught me that students learn well when they love what they are learning. This simple aphorism – “you love to learn when you learn to love” – has been the cornerstone of my success as a student and a maturing teacher. Students used to regard classroom teachers as the singular resource for learning, but now students are surrounded by vast amounts of educational assets (textbooks, online lectures, YouTube videos, Wikipedia, etc.) which can make classroom teaching redundant or unnecessary (1). To circumvent the redundancy, I view the teaching position as a pylon to help students navigate these vast resources, to encourage an environment for intellectual interactions, and finally, to provide an enthusiasm that underpins joy of learning. These three aspects are crucial for students’ success in any variety of science classroom.</p>
+<p>The teacher’s biggest obligation is to organize the knowledge in an accessible way. This is best done by laying out the resources beforehand and then providing an educational experience from your own perspective. As a student, my favorite teachers were those who presented the material that would be in addition to the reading assigned before class. Students benefit from this because it removes the repetition of reading the material at home and then hearing the same thing they read, later, in class. As teaching assistant for a recitation of “Thermodynamics for Engineers” I would have students work on homework problems before class and then present new problems to work on during class time after I had answered questions about the problems they did at home. This way, students were already exposed to the methods and equations and had crystallized questions that could be answered during class time when doing similar problems. The time the student has in the class with the teacher is precious and lesson plans should be considerate of this.</p>
+<p>My most valuable time as a student was during active learning that promoted intellectual interactions. Large classrooms pose problems for active learning as students are often caught in group-think or otherwise too shy to voice their opinion and thus never resolve their questions adequately. Also, large groups make hands-on activities more difficult to implement. Both these issues can be resolved using small groups, as demonstrated by Nobel Laureate Carl Weiman recently with a controlled experiment (2). Retrospectively I found that these classes were also my favorites in high school and college. As a graduate student I have tried implementing these strategies during my teaching opportunities. I taught and developed syllabus during my tenure as a middle school science coach at B.O.O.S.T. (Building Opportunities and Overtures in Science and Technology) that grouped students into small sections to perform experiments and learn together (see group activities designed for developing research questions and designing experiments). The students really enjoyed these activities and often continued their learning at home although no homework was assigned and no teacher was present.</p>
+<p>The resources to learn a subject are ubiquitous and it is possible for students to acquire knowledge without the presence of a teacher (1). However, in any educational program there are students who will not be self-motivated to inherently want to learn a subject. The teacher needs to break down this obstacle by providing an enthusiastic approach – this involves moving away from esotericism and moving towards more practical examples and problems that can directly relate to students. For instance, my physics professor told the class about how to make kelp into a musical instrument – which he related to his lecture about quantum physics. The professor’s simple anecdote exemplified his enthusiasm and hooked me and the rest of the students for the rest of the semester. As an undergraduate student research mentor I found that enthusiasm goes a long way to engage students. This is evident from three of my four student research apprentices have voluntarily returned to continue research under my guidance after spending a semester of independent study or summer of REU experience with me.</p>
+<p>Teachers facilitate a key process in the education of the student. Though teachers are not the only facet in the educational system, the class time with a teacher is crucial for providing active learning experiences. I have learned from my past experiences as a TA, as an undergraduate research mentor, and as a middle school science coach, that the enthusiasm and the organization of a teacher facilitates the best environment for students to engage and love learning.</p>
+<p><small>1. Mitra, Sugata, and Ritu Dangwal. "Limits to self‐organising systems of learning—the Kalikuppam experiment." British Journal of Educational Technology 41.5 (2010): 672-688. </small></p>
+<p><small>2. Smith, Michelle K., et al. "Why peer discussion improves student performance on in-class concept questions." Science 323.5910 (2009): 122-124.</small></p>
+</div>
+</div>
+
+
+
+
+<div class="row" id="contact">
+<div class="col-xs-12">
+<h1>Contact</h1>
+
+<p>Feel free to email me: zack.scholl@gmail.com</p>
+<span class="pull-right">
+
+<a id="rg-ic" class="link" href="http://www.researchgate.net/profile/Zackary_Scholl">
+<i class="fa fa-flask fa-fw fa-lg"></i>
+</a> 
+<a id="md-ic" class="link" href="http://www.mendeley.com/profiles/zackary-scholl/">
+<i class="fa fa-maxcdn fa-lg"></i>
+</a>                         
+<a id="orc-ic" class="link" href="http://orcid.org/0000-0001-8324-2571">
+<i class="fa fa-ge fa-lg"></i>
+</a>                      
+<a id="twitter-ic" class="link" href="https://twitter.com/zack_118">
+<i class="fa fa-twitter fa-lg"></i>
+</a>
+<a id="git-ic" class="link" href="https://github.com/zns18">
+<i class="fa fa-github-square fa-lg"></i>
+</a>
+<a id="rss-ic" class="link" href="https://schollz.com/feed.xml">
+<i class="fa fa-rss fa-lg"></i>
+</a>
+</span>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://schollz.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+
+function scrollNav() {
+  $('.nav a').click(function(){  
+    //Toggle Class
+    $(".active").removeClass("active");      
+    $(this).closest('li').addClass("active");
+    var theClass = $(this).attr("class");
+    $('.'+theClass).parent('li').addClass('active');
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 60
+    }, 400);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();</script>
+  </body>
+</html>
+

@@ -1,0 +1,81 @@
+   /* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 1.3em;
+}
+
+
+body, p {
+  font-family: 'Lora',Adobe Caslon,Georgia,Times New Roman,Times,serif;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 760px; /* or 950px */
+}
+
+h1 {
+  font-weight:700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+p {
+  font-weight:400;
+  text-rendering: geometricPrecision;
+  display: block;
+  float: left;
+  --x-height-multiplier: 0.55;
+  --baseline-multiplier: 0.179;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+
+
+@media (max-width: 48em) {
+  .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+
+@media (min-width: 48em) {
+  .container-fluid {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  html {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 56em) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+/*
+@include media-breakpoint-up(min-width: 768px) {   
+  body {
+    font-size: 16px;
+  }
+}
+
+
+@include media-breakpoint-up(min-width: 992px) {   
+  p {
+    font-size: 20px;
+  }
+   }
+
+
+@include media-breakpoint-up(min-width: 1200px) {   
+  body {
+    font-size: 24px;
+  }
+}*/

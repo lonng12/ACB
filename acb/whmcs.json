@@ -1,0 +1,32 @@
+{
+    "schema": "1.0",
+    "type": "acb",
+    "name": "acb",
+    "license": "MIT",
+    "category": "payments",
+    "description": {
+        "name": "Cổng thanh toán ACB WHMCS",
+        "tagline": "Module Cổng thanh toán Vietcombank cho phép bạn tích hợp các giải pháp thanh toán với nền tảng WHMCS.",
+        "long": "Tích hợp cổng thanh toán ACB với WHMCS.",
+        "features": [
+            "Tự động nhập cú pháp và số tiền khi quét mã thanh toán",
+            "Lợi ích của plugin này là bạn không cần phải đăng ký tư cách doanh nghiệp với momo mà hoàn toàn sử dụng tài khoản cá nhân !",
+            "Xử lý giao dịch tự động mà ko cần phải xác nhận thanh toán bằng tay (*)",
+            "Cú pháp tuỳ chỉnh linh hoạt",
+            "Tương thích với phiên bản mới nhất của WHMCS"
+        ]
+    },
+    "logo": {
+        "filename": "logo.png"
+    },
+    "support": {
+        "homepage": "https:\/\/dptcloud.vn\/", 
+        "email": "admin@dptcloud.vn"
+    },
+    "authors": [
+        {
+            "name": "DPTCLOUD",
+            "homepage": "https:\/\/dptcloud.vn\/"
+        }
+    ]
+}
