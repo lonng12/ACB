@@ -6,7 +6,7 @@
     "category": "payments",
     "description": {
         "name": "Cổng thanh toán ACB WHMCS",
-        "tagline": "Module Cổng thanh toán Vietcombank cho phép bạn tích hợp các giải pháp thanh toán với nền tảng WHMCS.",
+        "tagline": "Module Cổng thanh toán ACB cho phép bạn tích hợp các giải pháp thanh toán với nền tảng WHMCS.",
         "long": "Tích hợp cổng thanh toán ACB với WHMCS.",
         "features": [
             "Tự động nhập cú pháp và số tiền khi quét mã thanh toán",
