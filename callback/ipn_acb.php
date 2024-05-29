@@ -14,7 +14,6 @@ $gatewayModuleName = 'acb';
 
 // Lấy thông tin cấu hình.
 $gatewayParams = getGatewayVariables($gatewayModuleName);
-
 function response($data, $code = 200)
 {
     (
@@ -27,7 +26,6 @@ function response($data, $code = 200)
 
     die;
 }
-
 function parse_order_id($des, $MEMO_PREFIX)
 {
     $re = '/' . $MEMO_PREFIX . '\d+/im';
@@ -40,21 +38,6 @@ function parse_order_id($des, $MEMO_PREFIX)
     $orderId = intval(substr($orderCode, $prefixLength));
     return $orderId;
 }
-
-function verify_license_key($key)
-{
-    $url = "https://api.licensegate.io/license/a1cc8/c07cbb30-61d4-4909-8f39-80d89537c42d/verify?key=" . urlencode($key);
-
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $response = curl_exec($ch);
-    $data = json_decode($response, true);
-    curl_close($ch);
-
-    return isset($data['valid']) && $data['valid'];
-}
-
 // Die if module is not active.
 if (!$gatewayParams['type']) {
     response([
@@ -62,21 +45,10 @@ if (!$gatewayParams['type']) {
         'message' => 'Cổng thanh toán ACB chưa được kích hoạt !'
     ], 428);
 }
-
-// Kiểm tra key kích hoạt
-$licenseKey = $gatewayParams['license_key'];
-if (!verify_license_key($licenseKey)) {
-    $systemUrl = $gatewayParams['systemurl'];
-    $returnUrl = $systemUrl . 'modules/gateways/acb/invalid_key.php';
-    header("Location: $returnUrl");
-    exit();
-}
-
 $token = $gatewayParams['token'];
 $password = $gatewayParams['password'];
 $stk = $gatewayParams['stk'];
 $endpoint = "https://api.dptcloud.vn/historyapiacb";
-
 // mẫu cú pháp check
 $replacedSyntax = preg_replace(['#{{orderid}}#'], '', $gatewayParams['noidung']);
 $url = $endpoint . "/" . $token;
@@ -131,13 +103,13 @@ foreach ($result['data'] as $value) {
             'Số Tiền' => (int) str_replace(',', '', $value['amount']),
             'Hoá Đơn' => $invoiceId,
         ], 'Thành Công');
-        addInvoicePayment(
-            $order->id,
-            $value['transactionNumber'],
-            (int) str_replace(',', '', $value['amount']),
-            0,
-            $gatewayModuleName
-        );
+            addInvoicePayment(
+                $order->id,
+                $value['transactionNumber'],
+                (int) str_replace(',', '', $value['amount']),
+                0,
+                $gatewayModuleName
+            );
         response([
             'success' => true,
             'message' => 'Hóa đơn đã thanh toán thành công !'

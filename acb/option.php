@@ -1,3 +1,14 @@
+<?php
+function acb_MetaData()
+{
+    return array(
+        'DisplayName' => 'Cổng thanh toán ACB',
+        'APIVersion' => '1.1',
+        // Use API Version 1.1
+        'DisableLocalCredtCardInput' => true,
+        'TokenisedStorage' => false,
+    );
+}
 function acb_config()
 {
     return array(
@@ -14,6 +25,7 @@ function acb_config()
                 'VCB' => 'VCB',
                 'TPBANK' => 'TPBANK',
                 'MBBANK' => 'MBBANK',
+                // Thêm các tùy chọn khác nếu cần
             ),
             'Description' => 'Vui lòng chọn ngân hàng từ danh sách. Vui lòng chọn đúng ngân hàng để tạo được mã QR.',
         ),
@@ -58,12 +70,6 @@ function acb_config()
             'Type' => 'text',
             'Default' => 'DH{{orderid}}',
             'Description' => 'Nội dung thanh toán giúp chủ shop nhận biết được thanh toán cho đơn hàng nào. Với {{orderid}} là mã đơn hàng.',
-        ),
-        'license_key' => array(
-            'FriendlyName' => 'License Key',
-            'Type' => 'text',
-            'Default' => '',
-            'Description' => 'Nhập key kích hoạt của bạn',
         ),
         'url_callback' => array(
             'FriendlyName' => 'Link CallBack',

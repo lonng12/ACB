@@ -259,7 +259,7 @@ $url = $gatewayParams['systemurl'] . "modules/gateways/callback/request.php?&ord
                           <h4 style="margin-bottom: 10px;">Số tài khoản</h4>
                           <div style="display: flex; align-items: center;">
                               <p id="stk" style="margin: 0 10px 0 0;"><?php echo $stk; ?></p>
-                              <button style="background-color: #33cc33; border-radius: 10px; font-weight: bold; color: white; border: none; padding: 5px 10px; margin-left: 60px;" onclick="copyContentSTK()"><small>Sao chép</small></button>
+                              <button style="background-color: #33cc33; border-radius: 10px; font-weight: bold; color: white; border: none; padding: 5px 10px; margin-left: 51px;" onclick="copyContentSTK()"><small>Sao chép</small></button>
                           </div>
                       </div>
 
@@ -340,13 +340,19 @@ $url = $gatewayParams['systemurl'] . "modules/gateways/callback/request.php?&ord
                 <div
                   class="payment-qr col-sm-7 mx-auto pb-0 pt-3 pb-3 text-white"
                 >
+                    
                   <div class="payment-cta p-0">
-                    <marquee class="marquee">
-                     <span>Vui lòng đợi hệ thống duyệt thành công trước khi đóng tab trình duyệt!</span>
-                    </marquee>       
                     <div>
                       <h1>Quét mã QR để thanh toán</h1>
                     </div>
+    <div id="body-payment-content" style="display: inline-block; background: white; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); border-radius: 10px; padding: 5px; box-sizing: border-box; text-align: center;">
+
+        <img src="https://payment.momo.vn/v2/gateway/images/napas247-764f1c4e6746023a10f58afc80642aad.png" alt="Napas247" style="max-width: 90px; max-height: 90px; margin: 5px; border-radius: 5px;">
+        <img src="https://payment.momo.vn/v2/gateway/images/vietqr-57e791b1b4b954966058177a1f4efcaf.png" alt="VietQR" style="max-width: 90px; max-height: 90px; margin: 5px; border-radius: 5px;">
+    </div>
+                    <marquee class="marquee">
+                     <span>Vui lòng đợi hệ thống duyệt thành công trước khi đóng tab trình duyệt!</span>
+                    </marquee>       
                     <div id="momo-mark" class="mx-auto pt-3"></div>
 
                     <div class="qrcode_scan_container">
@@ -389,8 +395,7 @@ $url = $gatewayParams['systemurl'] . "modules/gateways/callback/request.php?&ord
                       </svg>
 
                       <a
-                        >Sử dụng <b> App Ngân hàng </b> hoặc ứng dụng camera hỗ trợ
-                        QR code để quét mã</a
+                        >Sử dụng <b> App Ngân hàng </b> hoặc ứng dụng <b>Ví điện tử</b> để quét mã</a
                       >
                     </div>
                   </div>
